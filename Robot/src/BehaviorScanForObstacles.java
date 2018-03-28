@@ -32,12 +32,6 @@ public class BehaviorScanForObstacles implements Behavior {
 	@Override
 	public void action() {
 		suppressed = false;
-		Sound.beepSequenceUp();
-		pilot.travel(-50, true);
-
-		while (pilot.isMoving() && !suppressed) {
-			Thread.yield();
-		}
 		pilot.stop();
 		suppress();
 	}

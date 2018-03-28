@@ -46,8 +46,7 @@ public class Main {
 			}
 
 			@Override
-			public void keyReleased(final Key key) {
-
+			public void keyReleased(Key k) {
 			}
 		});
 	}

@@ -39,7 +39,6 @@ public class BehaviorDoAction implements Behavior {
 		suppressed = false;
 		Sound.beepSequenceUp();
 		pilot.travel(-50, true);
-
 		while (pilot.isMoving() && !suppressed) {
 			Thread.yield();
 		}
